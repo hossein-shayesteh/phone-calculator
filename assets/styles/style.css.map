@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,CAAC,CAAC;EACA,WAAW,EAAE,mBAAmB;CACjC",
+    "sources": [
+        "style.scss",
+        "_variable.scss",
+        "_mixin.scss",
+        "_mediaquerys.scss",
+        "_font.scss",
+        "_mediaquerys.scss",
+        "_animations.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
