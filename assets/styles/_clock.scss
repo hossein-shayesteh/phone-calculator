@@ -1,0 +1,127 @@
+.phone-container {
+  @include size(100vw, 100vh);
+  @include flex;
+  background-image: linear-gradient(45deg, #ff6476, #ffbd76);
+  .phone {
+    @include size(375px, 812px);
+    background-image: linear-gradient(0deg, #1e2b3e, #2b4e6b);
+    box-shadow: 0px 10px 20px 11px#0f171e62;
+    border-radius: 40px;
+    border: 7px solid #192239;
+    .phone-header {
+      @include size(100%, 40px);
+      @include flex(unset, center);
+      #phone-header-clock {
+        @include font(13px, 600, #f6f7fc);
+        padding: 30px;
+        width: 33.33%;
+      }
+      .phone-header-speaker {
+        @include size(33.33%, 10px);
+        border-radius: 100px;
+        background-color: #192239;
+      }
+      .phone-header-battery {
+        @include flex(end, center);
+        padding-right: 20px;
+        width: 33.33%;
+        i {
+          @include font(12px, 600, #f6f7fc);
+          padding: 3px;
+          &:last-child {
+            @include font(18px, 600, #f6f7fc);
+          }
+        }
+      }
+    }
+    .phone-calculator {
+      @include size(100%, auto);
+      @include flex;
+      flex-direction: column;
+      .phone-calculator-screen {
+        @include size(100%, 360px);
+        textarea {
+          @include size(100%, 360px);
+          @include font(60px, 400, #d3d6e6);
+          transition: all 0.1s ease;
+          resize: none;
+          border: 0;
+          background-color: transparent;
+        }
+      }
+      .phone-calculator-numbers {
+        @include size(100%, 360px);
+        .phone-calculator-numbers-Braces {
+          @include size(100%, auto);
+          @include flex;
+          margin: 0 0 10px 0;
+          input {
+            @include size(140px, 50px);
+            @include flex;
+            @include font(22px, 400, #f6f7fc);
+            border-radius: 50px;
+            background-color: #1b2b44;
+            border: 0;
+            margin: 5px 10px;
+            &:active {
+              background-color: #182438;
+            }
+          }
+        }
+        .phone-calculator-numbers-numbers {
+          @include size(100%, auto);
+          @include font(18px, 600, #f6f7fc);
+          display: grid;
+          grid-template-columns: auto auto auto auto auto;
+          input {
+            @include font(28px, 400, #f6f7fc);
+            @include size(60px, 60px);
+            margin: 5px;
+            background-color: transparent;
+            border: 0;
+          }
+          .numbers {
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            &:active {
+              background: #1b2b44;
+            }
+          }
+          .operators {
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            background-image: linear-gradient(-45deg, #ff6476, #ffbd76);
+            &:active {
+              background-image: linear-gradient(-45deg, #ff6e7f, #ffc282);
+            }
+          }
+          input[value="+"] {
+            height: 140px;
+            grid-row: 2/4;
+            grid-column: 4/5;
+          }
+          input[value="="] {
+            width: 140px;
+            grid-column: 4/6;
+            background-image: linear-gradient(45deg, #f6358e, #fd78a2);
+            &:active {
+              background-image: linear-gradient(45deg, #f53e94, #ff89ae);
+            }
+          }
+        }
+      }
+    }
+    .phone-navigator {
+      @include size(100%, 40px);
+      @include flex;
+      button {
+        @include size(70px, 100%);
+        background-color: transparent;
+        border: 0;
+        i {
+          color: #f6f7fc;
+        }
+      }
+    }
+  }
+}

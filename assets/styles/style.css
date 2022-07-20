@@ -1,4 +1,258 @@
 * {
   font-family: "Vazir", sans-serif;
 }
+
+.phone-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(45deg, #ff6476, #ffbd76);
+}
+
+.phone-container .phone {
+  width: 375px;
+  height: 812px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2b3e), to(#2b4e6b));
+  background-image: linear-gradient(0deg, #1e2b3e, #2b4e6b);
+  -webkit-box-shadow: 0px 10px 20px 11px #0f171e62;
+          box-shadow: 0px 10px 20px 11px #0f171e62;
+  border-radius: 40px;
+  border: 7px solid #192239;
+}
+
+.phone-container .phone .phone-header {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-container .phone .phone-header #phone-header-clock {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f6f7fc;
+  padding: 30px;
+  width: 33.33%;
+}
+
+.phone-container .phone .phone-header .phone-header-speaker {
+  width: 33.33%;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #192239;
+}
+
+.phone-container .phone .phone-header .phone-header-battery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+  width: 33.33%;
+}
+
+.phone-container .phone .phone-header .phone-header-battery i {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f6f7fc;
+  padding: 3px;
+}
+
+.phone-container .phone .phone-header .phone-header-battery i:last-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f6f7fc;
+}
+
+.phone-container .phone .phone-calculator {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-screen {
+  width: 100%;
+  height: 360px;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-screen textarea {
+  width: 100%;
+  height: 360px;
+  font-size: 60px;
+  font-weight: 400;
+  color: #d3d6e6;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  resize: none;
+  border: 0;
+  background-color: transparent;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers {
+  width: 100%;
+  height: 360px;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-Braces {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-Braces input {
+  width: 140px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+  color: #f6f7fc;
+  border-radius: 50px;
+  background-color: #1b2b44;
+  border: 0;
+  margin: 5px 10px;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-Braces input:active {
+  background-color: #182438;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers {
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f6f7fc;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers input {
+  font-size: 28px;
+  font-weight: 400;
+  color: #f6f7fc;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: transparent;
+  border: 0;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers .numbers {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers .numbers:active {
+  background: #1b2b44;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers .operators {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  background-image: linear-gradient(-45deg, #ff6476, #ffbd76);
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers .operators:active {
+  background-image: linear-gradient(-45deg, #ff6e7f, #ffc282);
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers input[value="+"] {
+  height: 140px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers input[value="="] {
+  width: 140px;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  background-image: linear-gradient(45deg, #f6358e, #fd78a2);
+}
+
+.phone-container .phone .phone-calculator .phone-calculator-numbers .phone-calculator-numbers-numbers input[value="="]:active {
+  background-image: linear-gradient(45deg, #f53e94, #ff89ae);
+}
+
+.phone-container .phone .phone-navigator {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-container .phone .phone-navigator button {
+  width: 70px;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+}
+
+.phone-container .phone .phone-navigator button i {
+  color: #f6f7fc;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
   <head>
     <!--Required meta tags-->
     <meta charset="utf-8" />
@@ -27,9 +27,160 @@
     />
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <title>Document</title>
+    <title>Clock</title>
   </head>
   <body>
+    <!-- Start Clock  -->
+    <div class="phone-container">
+      <div class="phone">
+        <div class="phone-header">
+          <div id="phone-header-clock"></div>
+          <div class="phone-header-speaker"></div>
+          <div class="phone-header-battery">
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-battery-half"></i>
+          </div>
+        </div>
+        <div class="phone-calculator">
+          <div class="phone-calculator-screen">
+            <form name="form1">
+              <textarea name="answer" disabled wrap="soft"> </textarea>
+            </form>
+          </div>
+          <div class="phone-calculator-numbers">
+            <div class="phone-calculator-numbers-Braces">
+              <input
+                type="button"
+                value="("
+                onclick="form1.answer.value += '(' "
+              />
+              <input
+                type="button"
+                value=")"
+                onclick="form1.answer.value += ')' "
+              />
+            </div>
+            <div class="phone-calculator-numbers-numbers">
+              <input
+                class="numbers"
+                type="button"
+                value="7"
+                onclick="form1.answer.value += '7' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="8"
+                onclick="form1.answer.value += '8' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="9"
+                onclick="form1.answer.value += '9' "
+              />
+              <input
+                class="operators"
+                type="button"
+                value="-"
+                onclick="form1.answer.value += '-' "
+              />
+
+              <input
+                class="operators"
+                type="button"
+                value="÷"
+                onclick="form1.answer.value += '/' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="4"
+                onclick="form1.answer.value += '4' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="5"
+                onclick="form1.answer.value += '5' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="6"
+                onclick="form1.answer.value += '6' "
+              />
+              <input
+                class="operators"
+                type="button"
+                value="+"
+                onclick="form1.answer.value += '+' "
+              />
+              <input
+                class="operators"
+                type="button"
+                value="×"
+                onclick="form1.answer.value += '*' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="1"
+                onclick="form1.answer.value += '1' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="2"
+                onclick="form1.answer.value += '2' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="3"
+                onclick="form1.answer.value += '3' "
+              />
+              <input
+                class="operators"
+                type="button"
+                value="%"
+                onclick="form1.answer.value += '%' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="0"
+                onclick="form1.answer.value += '0' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="."
+                onclick="form1.answer.value += '.' "
+              />
+              <input
+                class="numbers"
+                type="button"
+                value="C"
+                onclick="form1.answer.value = '' "
+              />
+              <input
+                class="operators"
+                type="button"
+                value="="
+                onclick="form1.answer.value = eval(form1.answer.value) "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="phone-navigator">
+          <button><i class="fa-solid fa-square"></i></button>
+          <button><i class="fa-solid fa-circle"></i></button>
+          <button><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+    </div>
     <!--Bootstrap JavaScript-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -46,4 +197,3 @@
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
-
